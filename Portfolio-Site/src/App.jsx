@@ -1,20 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+import React from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Layout from './Components/Layout';
+import Webdesign from './Pages/Webdesign';
+import Media from './Pages/Media';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
-function App() {
+
+export default function App() {
 
 
   return (
     <>
-      <div className='flex flex-col bg-neutral-600 rounded-full p-4 max-w-[300px] min-w-[200px] justify-self-center text-center'>
-        <h1 className='text-neutral-100 font-bold '>
-          Test
-        </h1>
-        <p>Subline</p>
-      </div>
+        <HashRouter>
+          <Routes>
+            <Route path='/' element={<Layout/>}>
+              <Route index element={<Home />} />
+              <Route path='webdesign' element={ <Webdesign /> }/>
+              <Route path='media' element={ <Media /> }/>
+              <Route path='about' element={ <About /> }/>
+              <Route path='contact' element={ <Contact /> }/>
+            </Route>
+          </Routes>
+        </HashRouter>
     </>
   )
 }
-
-export default App
