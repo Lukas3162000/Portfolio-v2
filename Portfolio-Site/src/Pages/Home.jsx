@@ -8,6 +8,11 @@ export default function Home(){
         <>
             <HeroSection />
             <p>Home</p>
+            <HeroSection />
+            <HeroSection />
+            <HeroSection />
+            <HeroSection />
+
         </>
     );
 };
