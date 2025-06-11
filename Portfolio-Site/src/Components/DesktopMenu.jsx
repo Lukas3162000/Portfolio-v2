@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 
 export default function DesktopMenu({ handleMouseEnter, handleMouseLeave, showSubMenu, baseClasses, activeMenu, setActiveMenu, hoveredIndex, setHoveredIndex }) {
   return (
-    <nav className="max-w-7xl mx-auto px-6 pt-4 flex flex-col items-center transition-all duration-300 ease-in-out">
+    <nav className="max-w-7xl min-w-4xl mx-auto px-6 pt-4 flex flex-col items-center transition-all duration-300 ease-in-out">
        
        
        
