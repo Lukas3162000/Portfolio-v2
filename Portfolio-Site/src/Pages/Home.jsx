@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../Components/HeroSlider";
 import SectionOverview from "../Components/SectionOverview";
 import QuickIntro from "../Components/QuickIntro";
+import Footer from "../Components/Footer";
 
 
 export default function Home(){
@@ -11,11 +12,7 @@ export default function Home(){
             <HeroSection />
             <SectionOverview />
             <QuickIntro />
-            <p>Home</p>
-            <HeroSection />
-            <HeroSection />
-            <HeroSection />
-            <HeroSection />
+            
 
         </>
     );

@@ -14,7 +14,7 @@ export default function QuickIntro(){
                 {/* Bildbereich */}
                 <div className="flex justify-center">
                     <img
-                        src="https://lukas3162000.github.io/trainer-website-v3/assets/About_pic-18eu0jD7.jpg"
+                        src="src/assets/Unbenannt.jpg"
                         alt="Profilbild"
                         className="w-64 h-64 object-cover rounded-3xl shadow-lg transform rotate-1 transition-transform duration-300 hover:scale-105 ease-in-out"
                     />
