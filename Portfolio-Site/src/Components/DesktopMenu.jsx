@@ -42,11 +42,18 @@ export default function DesktopMenu({ handleMouseEnter, handleMouseLeave, showSu
             </li>
 
             <li onMouseEnter={() => handleMouseEnter("webdesign")}>
-              <span className={`${baseClasses}`}>Webdesign</span>
+              <span className={`${baseClasses}`}>
+                
+                <NavLink to="/webdesign">Webdesign</NavLink>
+                
+                </span>
             </li>
 
             <li onMouseEnter={() => handleMouseEnter("media")}>
-              <span className={`${baseClasses}`}>Media</span>
+              <span className={`${baseClasses}`}>
+                <NavLink to="/Media">Media</NavLink>  
+                
+              </span>
             </li>
 
             <li onMouseEnter={handleMouseLeave}>
